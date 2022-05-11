@@ -10,7 +10,7 @@ public class C09_manageMethodlari {
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.amaazon.com");
         /*
           Ilerde wait konusunu daha genis olarak ele alacagiz
