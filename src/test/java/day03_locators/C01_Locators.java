@@ -18,8 +18,11 @@ public class C01_Locators {
 
         //amazona git nutella arat
         driver.get("https://www.amazon.com");
-        //
+
+        // findElement(By .... locator) --> istedigimiz web elementini bize dondurur
+        // biz de o webelementini kullanmak icin bir objeye assign ederiz
         WebElement aramakutusu = driver.findElement(By.id("twotabsearchtextbox"));
+
         //WebElement aramaKutusu= driver.findElement(By.name("field-keywords"));
        /* WebElement aramaKutusu= driver.findElement(By.className("nav-search-field "));
            Bu locator calismadi
@@ -31,16 +34,13 @@ public class C01_Locators {
         <input type="text" id="twotabsearchtextbox" value="" name="field-keywords"
         autocomplete="off" placeholder="" class="nav-input nav-progressive-attribute"
         dir="auto" tabindex="0" aria-label="Search">
-
          */
-
         // herhangi bir webelementine istedigimiz yaziyi yollamak istersek
-
         aramakutusu.sendKeys("nutella"+ Keys.ENTER);
 
-        //aramakurusu.click();
-      //  Thread.sleep(2000);
+        //Thread.sleep(2000);
+
         //sayfayi kapat
-      //  driver.close();
+        //driver.close();
     }
 }
