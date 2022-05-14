@@ -15,7 +15,7 @@ public class C03_CssSelector {
         //  a. Verilen web sayfasına gidin. http://a.testaddressbook.com/sign_in
         driver.get("http://a.testaddressbook.com/sign_in");
         //  b. Locate email textbox
-        WebElement mailTextBox= driver.findElement(By.cssSelector("#session_email"));
+        WebElement mailTextBox= driver.findElement(By.cssSelector("input#session_email"));
         //  c. Locate password textbox ve
         WebElement passwordTextBox= driver.findElement(By.cssSelector("#session_password"));
         //  d. Locate signin button

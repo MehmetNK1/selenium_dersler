@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class C02_DriverMethodlari {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
         WebDriver driver=new ChromeDriver();
@@ -14,6 +14,7 @@ public class C02_DriverMethodlari {
         driver.getTitle();
         System.out.println("actual title "+driver.getTitle());
         System.out.println("actual url "+driver.getCurrentUrl());
+        Thread.sleep(5000);
         driver.close();
     }
 }
